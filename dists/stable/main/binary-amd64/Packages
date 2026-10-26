@@ -1,18 +1,18 @@
 Package: battery-health-center
-Version: 0.3.1-1
+Version: 0.3.2-1
 Architecture: amd64
 Homepage: https://github.com/arios4k/battery-health-center
 Maintainer: Alexis Rios-Negron <182820807+arios4k@users.noreply.github.com>
-Installed-Size: 1464
-Depends: libadwaita-1-0 (>= 1.5), libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.54.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.13.5), libgtk-4-1 (>= 4.14), pkexec | policykit-1, upower
+Installed-Size: 1466
+Depends: libadwaita-1-0 (>= 1.5), libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.54.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.13.5), libgtk-4-1 (>= 4.14), libpango-1.0-0 (>= 1.14.0), pkexec | policykit-1, upower
 Recommends: power-profiles-daemon
 Priority: optional
 Section: utils
-Filename: pool/main/b/battery-health-center/battery-health-center_0.3.1-1_amd64.deb
-Size: 477460
-SHA256: 0cd9c83fc3a2d3a0dd0595ad20018bf2e0fb994c591f63505b0a8ec8d86703c0
-SHA1: ad98fe6e6d813c0982be91cc714f68f7553c6080
-MD5sum: 5acd227e5ad4aea999dd2d5445fec092
+Filename: pool/main/b/battery-health-center/battery-health-center_0.3.2-1_amd64.deb
+Size: 478420
+SHA256: 30a5ca51cc0e55f77f5cdbc2c8e475fdaf6985d28045687c9b16a8fc5c3a63c1
+SHA1: 1296cb9c2f11ae8f432177529973a92df0e8a47c
+MD5sum: 23fc50a1e9216b7eabf4cecfafd77632
 Description: All your laptop battery information in one place, for GNOME
  Battery Health Center shows everything about your laptop battery in one GNOME
  app: health and cycle count, charge limits to reduce wear, charge to 100% once,
