@@ -43,8 +43,10 @@ sudo apt install battery-health-center</code></pre>
 
 <h2>Works on</h2>
 <ul>
-  <li>Ubuntu 24.04 and newer, Zorin OS 18, Linux Mint 22, Debian 13 (any 64-bit Intel/AMD system with GTK 4.14 and libadwaita 1.5 or newer)</li>
-  <li>Not on Ubuntu 22.04 or Debian 12: their libadwaita is too old</li>
+  <li>Tested on Ubuntu 24.04 and Zorin OS 18</li>
+  <li>Should also work on Linux Mint 22 and Debian 13 (same or newer libraries), but those are not tested</li>
+  <li>Needs a 64-bit Intel/AMD system with glibc 2.39, GTK 4.14 and libadwaita 1.5 or newer. It does not
+      install on Ubuntu 22.04, Debian 12 or Mint 21: their libraries are too old</li>
 </ul>
 
 <h2>Remove</h2>
@@ -60,6 +62,9 @@ sudo rm /etc/apt/sources.list.d/battery-health-center.list /etc/apt/keyrings/bat
 </table>
 <p class="dim">Compare the fingerprint of the file you downloaded with the one above:
 <code>gpg --show-keys --with-fingerprint key.asc</code></p>
+
+<p>Something not working? The <a href="https://github.com/arios4k/apt#readme">README</a> explains the common
+errors and how to fix them.</p>
 
 <h2>Other ways to install</h2>
 <ul>
