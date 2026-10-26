@@ -1,0 +1,25 @@
+Package: battery-health-center
+Version: 0.3.0-1
+Architecture: amd64
+Homepage: https://github.com/arios4k/battery-health-center
+Maintainer: Alexis Rios-Negron <182820807+arios4k@users.noreply.github.com>
+Installed-Size: 1458
+Depends: libadwaita-1-0 (>= 1.5), libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.54.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.13.5), libgtk-4-1 (>= 4.14), pkexec | policykit-1, upower
+Recommends: power-profiles-daemon
+Priority: optional
+Section: utils
+Filename: pool/main/b/battery-health-center/battery-health-center_0.3.0-1_amd64.deb
+Size: 474252
+SHA256: 66489c0a9572b98bcf7a255474f14f8622a101dee2da35a56a5247ab2b7cb5a5
+SHA1: 7f2fd06e21dd124fb730d5f374efdbd130e7402c
+MD5sum: 9e3b86f4bf3b45f57e795b094aae1eb1
+Description: All your laptop battery information in one place, for GNOME
+ Battery Health Center shows everything about your laptop battery in one GNOME
+ app: health and cycle count, charge limits to reduce wear, charge to 100% once,
+ battery use during sleep, power modes and power-saving settings, and which apps
+ use the most energy.
+ .
+ Charge limits need a laptop whose firmware exposes charge thresholds to the
+ kernel (as on ThinkPads and many others). Changing them asks for your password
+ through PolicyKit.
+

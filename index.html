@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battery Health Center: apt repository</title>
+<meta name="description" content="Install Battery Health Center on Ubuntu, Debian, Zorin OS and Linux Mint with apt.">
+<style>
+  :root { --bg:#fff; --fg:#1e1e1e; --dim:#5f5f5f; --line:#e1e1e1; --code:#f3f3f3; --accent:#26a269; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1d1f21; --fg:#eceff1; --dim:#a4abb0; --line:#34383c; --code:#14161a; --accent:#57e389; }
+  }
+  body { background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
+         max-width:44rem; margin:0 auto; padding:2.5rem 1rem 4rem; }
+  h1 { margin:0 0 .25rem; font-size:1.9rem; }
+  h2 { margin:2.25rem 0 .5rem; font-size:1.2rem; border-bottom:1px solid var(--line); padding-bottom:.3rem; }
+  p, li { color:var(--fg); }
+  .lead, .dim { color:var(--dim); }
+  a { color:var(--accent); }
+  pre { background:var(--code); border:1px solid var(--line); border-radius:8px; padding:.9rem 1rem;
+        overflow-x:auto; margin:.5rem 0 1rem; }
+  code { font:0.88rem/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  p code, li code, td code { background:var(--code); padding:.1em .35em; border-radius:4px; }
+  table { border-collapse:collapse; width:100%; margin:.5rem 0; }
+  td { border-bottom:1px solid var(--line); padding:.4rem .5rem .4rem 0; vertical-align:top; }
+  td:first-child { color:var(--dim); white-space:nowrap; width:1%; padding-right:1rem; }
+  @media (max-width:30rem) { body { padding-top:1.5rem; } }
+</style>
+</head>
+<body>
+<h1>Battery Health Center</h1>
+<p class="lead">All your laptop battery information in one place, for GNOME: health, cycle count, charge limits,
+sleep drain, power modes and which apps use the most energy.</p>
+
+<h2>Install</h2>
+<p>These commands add the repository once. After that, <code>apt</code> keeps the app up to date with the rest of your system.</p>
+<pre><code>sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://arios4k.github.io/apt/key.asc | sudo tee /etc/apt/keyrings/battery-health-center.asc &gt; /dev/null
+echo "deb [signed-by=/etc/apt/keyrings/battery-health-center.asc] https://arios4k.github.io/apt stable main" | sudo tee /etc/apt/sources.list.d/battery-health-center.list
+sudo apt update
+sudo apt install battery-health-center</code></pre>
+<p>Then open <strong>Battery Health Center</strong> from your applications.</p>
+
+<h2>Works on</h2>
+<ul>
+  <li>Ubuntu 24.04 and newer, Zorin OS 18, Linux Mint 22, Debian 13 (any 64-bit Intel/AMD system with GTK 4.14 and libadwaita 1.5 or newer)</li>
+  <li>Not on Ubuntu 22.04 or Debian 12: their libadwaita is too old</li>
+</ul>
+
+<h2>Remove</h2>
+<pre><code>sudo apt remove battery-health-center
+sudo rm /etc/apt/sources.list.d/battery-health-center.list /etc/apt/keyrings/battery-health-center.asc</code></pre>
+
+<h2>Signing key</h2>
+<p>Packages are signed so <code>apt</code> can check they come from the project and weren't changed.</p>
+<table>
+  <tr><td>Key</td><td>Battery Health Center Packages</td></tr>
+  <tr><td>Fingerprint</td><td><code>F090 D01D 74F7 14C8 5A95 23CA 4773 367E BD97 6CF5</code></td></tr>
+  <tr><td>Download</td><td><a href="key.asc">key.asc</a></td></tr>
+</table>
+<p class="dim">Compare the fingerprint of the file you downloaded with the one above:
+<code>gpg --show-keys --with-fingerprint key.asc</code></p>
+
+<h2>Other ways to install</h2>
+<ul>
+  <li><a href="https://snapcraft.io/battery-health-center">Snap Store</a>: sandboxed, so the power-mode and power-saving settings and real app icons are unavailable</li>
+  <li><a href="https://github.com/arios4k/battery-health-center">Source code and build instructions</a></li>
+</ul>
+<p class="dim">The apt version is the full one: real app icons, per-app energy use, the complete Power page, and charge
+limits through the normal password prompt. Don't install it together with the snap.</p>
+</body>
+</html>

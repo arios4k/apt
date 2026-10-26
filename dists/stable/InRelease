@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Battery Health Center
+Label: Battery Health Center
+Suite: stable
+Codename: stable
+Date: Mon, 26 Oct 2026 19:32:43 UTC
+Architectures: amd64
+Components: main
+Description: Battery Health Center packages
+MD5Sum:
+ fb6fd40dbc72a891cda8b847d6edb79f 1304 main/binary-amd64/Packages
+ a76245963e5dd10c1fac4d973acd69c1 780 main/binary-amd64/Packages.gz
+ c00d1daf5a08ffe861cbdc8bdea4c7a1 155 main/binary-amd64/Release
+SHA1:
+ c92f055339a2174f72f2a2f654e28ceab2b546ff 1304 main/binary-amd64/Packages
+ 2c035a579c671940136ba36262967d27890731e1 780 main/binary-amd64/Packages.gz
+ c02eeea367e7d134d9ec8750459471951e472e05 155 main/binary-amd64/Release
+SHA256:
+ cbfc64a7beebfaefcd3ec9b4f4fc226a2545b1b888758d9042eaff7ef0bff9d3 1304 main/binary-amd64/Packages
+ b69e6e3273342244395328d06ba6839cb8a72fc6fe96f417446c950132f6d1cd 780 main/binary-amd64/Packages.gz
+ d414cd34a2770d4e932ffc76bdd2447607516ccc0dde86b01ef7d614767fee74 155 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE8JDQHXT3FMhalSPKR3M2fr2XbPUFAmrfqugACgkQR3M2fr2X
+bPVMEA/7Bm/emTPwZD1nr4SZGiBsEmYiA1PN/+cSHo02j7qqFgFzLg+eSjDA/y2g
+3Ekv6i7rsEDK836NAFVckpuWWlggVXYxU5JnhdoOeTtEw/7Wus7U9R+GI5aofsgf
+49KrZR2Y21oJr8/3m3OH4Hz+knizxxCd0qOlYhgNtJqRDcwua9qQsdgHKv9LBGlJ
+dKpddNgX43vkpg7wJJ3QEviqdyM/Shl+vQqnk8Cf6tyWA2nrU5+qlvIAhgf0GdZo
+J8FDQcUazTqvywd6hKGXpdLz99YCjP/zphwXHmgQ1genzg41DuN09fZPrQ0uhQ/C
+t9biAIjjeSQGWXoSmKc78H6mMVP7US60siqtRDKUAMRHUEpf2WOj4vEfOAN2XDVz
+V/dehqf3cx3MuUYW7ZGXfvXuOTJAxNoW7gTdguvAUQuw8vCWcS2gTvekNJyVRO+V
+53IfzdgxfLyFUKADbdnJXWS+bQTRRVSq9HW2Sb+kFIysyJnq81wNc6N7uXPHaeOv
+TN53qNrbiSMrAOAklzp3agyYWREBXTnyOQ8Fk1pEv4NJ49TUvKEEemdhRCW7eefE
+LpnUlj4X+phMh4ohaKK7gbbOb4kwJ48+EC++wGwhiK12FiEL9/X48T0wUVZK0mwu
+Umv8eiSdtRSj0XmWG9yrD0YPAPaEbv0HWFwzB/ZDXoBb2+cv23E=
+=P5aw
+-----END PGP SIGNATURE-----
