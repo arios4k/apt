@@ -24,6 +24,8 @@
   table { border-collapse:collapse; width:100%; margin:.5rem 0; }
   td { border-bottom:1px solid var(--line); padding:.4rem .5rem .4rem 0; vertical-align:top; }
   td:first-child { color:var(--dim); white-space:nowrap; width:1%; padding-right:1rem; }
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:.75rem; margin:.75rem 0 0; }
+  .shots img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; display:block; }
   @media (max-width:30rem) { body { padding-top:1.5rem; } }
 </style>
 </head>
@@ -31,6 +33,15 @@
 <h1>Battery Health Center</h1>
 <p class="lead">All your laptop battery information in one place, for GNOME: health, cycle count, charge limits,
 sleep drain, power modes and which apps use the most energy.</p>
+
+<h2>Screenshots</h2>
+<div class="shots">
+  <img src="screenshots/overview.png" alt="Overview: charge level, time remaining, health and power source" loading="lazy">
+  <img src="screenshots/health.png" alt="Health: capacity over time and cycle count" loading="lazy">
+  <img src="screenshots/charging.png" alt="Charging: charge limit and one-time full charge" loading="lazy">
+  <img src="screenshots/usage.png" alt="Usage: which apps use the most energy" loading="lazy">
+  <img src="screenshots/power.png" alt="Power: power modes and power-saving settings" loading="lazy">
+</div>
 
 <h2>Install</h2>
 <p>These commands add the repository once. After that, <code>apt</code> keeps the app up to date with the rest of your system.</p>

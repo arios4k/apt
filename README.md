@@ -12,10 +12,27 @@ which apps use the most energy.
 This is the **full version** of the app. If you'd rather use the sandboxed one, there is also a
 [snap](https://snapcraft.io/battery-health-center) (see [apt or snap?](#apt-or-snap)).
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/overview.png" alt="Overview: charge level, time remaining, health and power source" width="48%">
+  <img src="screenshots/health.png" alt="Health: capacity over time and cycle count" width="48%">
+</p>
+<p align="center">
+  <img src="screenshots/charging.png" alt="Charging: charge limit and one-time full charge" width="48%">
+  <img src="screenshots/usage.png" alt="Usage: which apps use the most energy" width="48%">
+</p>
+<p align="center">
+  <img src="screenshots/power.png" alt="Power: power modes and power-saving settings (apt version only)" width="48%">
+</p>
+
+The Power page, with power modes and GNOME's power-saving settings, is only in the apt version.
+
 ---
 
 ## Contents
 
+- [Screenshots](#screenshots)
 - [Install](#install)
 - [Which systems it works on](#which-systems-it-works-on)
 - [Check the signing key](#check-the-signing-key)
