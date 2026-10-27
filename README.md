@@ -20,9 +20,10 @@ This is the **full version** of the app. If you'd rather use the sandboxed one, 
 </p>
 <p align="center">
   <img src="screenshots/charging.png" alt="Charging: charge limit and one-time full charge" width="48%">
-  <img src="screenshots/usage.png" alt="Usage: which apps use the most energy" width="48%">
+  <img src="screenshots/usage.png" alt="Usage: battery level history and battery use during sleep" width="48%">
 </p>
 <p align="center">
+  <img src="screenshots/usage-apps.png" alt="Usage: apps using the most energy, with their real icons and estimated power draw" width="48%">
   <img src="screenshots/power.png" alt="Power: power modes and power-saving settings (apt version only)" width="48%">
 </p>
 
