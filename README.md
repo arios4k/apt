@@ -10,7 +10,7 @@ energy (with an hour-by-hour view for each app). You can export your history as 
 &nbsp;·&nbsp; **Web page:** [arios4k.github.io/apt](https://arios4k.github.io/apt)
 &nbsp;·&nbsp; **Project and issues:** [arios4k/battery-health-center](https://github.com/arios4k/battery-health-center)
 
-**Latest version:** 0.3.3
+**Latest version:** 0.4.0
 &nbsp;·&nbsp; **Languages:** English, Spanish (español) and German (Deutsch). The app follows your system language.
 
 This is the **full version** of the app. If you'd rather use the sandboxed one, there is also a

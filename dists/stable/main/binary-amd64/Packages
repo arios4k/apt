@@ -1,25 +1,28 @@
 Package: battery-health-center
-Version: 0.3.3-1
+Version: 0.4.0-1
 Architecture: amd64
 Homepage: https://github.com/arios4k/battery-health-center
 Maintainer: Alexis Rios-Negron <182820807+arios4k@users.noreply.github.com>
-Installed-Size: 1583
+Installed-Size: 1729
 Depends: libadwaita-1-0 (>= 1.5), libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.54.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.13.5), libgtk-4-1 (>= 4.14), libpango-1.0-0 (>= 1.14.0), pkexec | policykit-1, upower
 Recommends: power-profiles-daemon
 Priority: optional
 Section: utils
-Filename: pool/main/b/battery-health-center/battery-health-center_0.3.3-1_amd64.deb
-Size: 505560
-SHA256: 9b20589a7daf35b59731840d418451b1fb386d07b490c38675171a6853f25e9f
-SHA1: 7fc6ad9c5ceb2014eb4e2f04c287666d90d2a67a
-MD5sum: ed484448cc65c36016bea1b02eca0989
+Filename: pool/main/b/battery-health-center/battery-health-center_0.4.0-1_amd64.deb
+Size: 549952
+SHA256: 08e0b4e6b53bdf0dbbbb773dd0234414fa081d6f42bb67e3a0ee27d1a8ab578b
+SHA1: 4183746562ee5f564dfa770ab4f6a42308807c5e
+MD5sum: 55b30134d4b4f0a83446668bfa978cda
 Description: All your laptop battery information in one place, for GNOME
  Battery Health Center shows everything about your laptop battery in one GNOME
- app: health and cycle count, charge limits to reduce wear, charge to 100% once,
- battery use during sleep, power modes and power-saving settings, and which apps
- use the most energy.
+ app: health and cycle count, charge limits and profiles to reduce wear, a
+ charging schedule and optimized charging, battery use during sleep, power modes
+ and power-saving settings, battery-saving tips, and which apps use the most
+ energy (with an hour-by-hour view per app). History can be exported as CSV. It
+ is available in English, Spanish and German.
  .
  Charge limits need a laptop whose firmware exposes charge thresholds to the
  kernel (as on ThinkPads and many others). Changing them asks for your password
- through PolicyKit.
+ through PolicyKit; the charging schedule is then carried out by a small root
+ service without asking again.
 
