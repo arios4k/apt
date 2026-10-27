@@ -9,6 +9,9 @@ which apps use the most energy.
 &nbsp;·&nbsp; **Web page:** [arios4k.github.io/apt](https://arios4k.github.io/apt)
 &nbsp;·&nbsp; **Project and issues:** [arios4k/battery-health-center](https://github.com/arios4k/battery-health-center)
 
+**Latest version:** 0.3.3
+&nbsp;·&nbsp; **Languages:** English, Spanish (español) and German (Deutsch). The app follows your system language.
+
 This is the **full version** of the app. If you'd rather use the sandboxed one, there is also a
 [snap](https://snapcraft.io/battery-health-center) (see [apt or snap?](#apt-or-snap)).
 
@@ -36,6 +39,7 @@ The Power page, with power modes and GNOME's power-saving settings, is only in t
 - [Screenshots](#screenshots)
 - [Install](#install)
 - [Which systems it works on](#which-systems-it-works-on)
+- [Languages](#languages)
 - [Check the signing key](#check-the-signing-key)
 - [Update and remove](#update-and-remove)
 - [Other ways to add the repository](#other-ways-to-add-the-repository)
@@ -97,6 +101,23 @@ On an unsupported system `apt install` stops with a message like
 
 The app itself is for laptops with a battery. Charge limits additionally need firmware that exposes charge
 thresholds to the kernel (ThinkPads and many other laptops do); everything else works on any laptop.
+
+## Languages
+
+| Language | Status |
+| --- | --- |
+| English | Original |
+| Spanish (español) | Included since 0.3.3 |
+| German (Deutsch) | Included since 0.3.3 |
+
+The app uses your system language and shows English for anything that isn't translated. To try another
+language for one run, start it from a terminal, for example `LANGUAGE=de battery-health-center`. (Your
+system needs that language's locale installed for the system language to be picked up automatically; the
+`LANGUAGE` variable works either way.) The exported HTML battery report is still English only.
+
+The translations are written by the author and a native speaker's review is welcome. To add a language or
+fix a translation, see [Translations](https://github.com/arios4k/battery-health-center#translations) in
+the project's README.
 
 ## Check the signing key
 
