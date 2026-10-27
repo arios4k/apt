@@ -2,8 +2,9 @@
 
 A signed apt repository for [Battery Health Center](https://github.com/arios4k/battery-health-center),
 a GNOME app that shows everything about your laptop battery in one place: health and cycle count,
-charge limits to reduce wear, battery use during sleep, power modes and power-saving settings, and
-which apps use the most energy.
+charge limits and profiles to reduce wear, a charging schedule and optimized charging, battery use
+during sleep, power modes and power-saving settings, battery-saving tips, and which apps use the most
+energy (with an hour-by-hour view for each app). You can export your history as CSV.
 
 **Repository address:** `https://arios4k.github.io/apt`
 &nbsp;·&nbsp; **Web page:** [arios4k.github.io/apt](https://arios4k.github.io/apt)
@@ -22,11 +23,14 @@ This is the **full version** of the app. If you'd rather use the sandboxed one, 
   <img src="screenshots/health.png" alt="Health: capacity over time and cycle count" width="48%">
 </p>
 <p align="center">
-  <img src="screenshots/charging.png" alt="Charging: charge limit and one-time full charge" width="48%">
+  <img src="screenshots/charging.png" alt="Charging: profiles, charge limit, charging schedule and optimized charging" width="48%">
   <img src="screenshots/usage.png" alt="Usage: battery level history and battery use during sleep" width="48%">
 </p>
 <p align="center">
   <img src="screenshots/usage-apps.png" alt="Usage: apps using the most energy, with their real icons and estimated power draw" width="48%">
+  <img src="screenshots/app-trend.png" alt="One app's energy use hour by hour, opened by clicking it on the Usage page" width="48%">
+</p>
+<p align="center">
   <img src="screenshots/power.png" alt="Power: power modes and power-saving settings (apt version only)" width="48%">
 </p>
 
@@ -214,9 +218,11 @@ updates. Only the **newest** version is kept in the repository; older ones are r
 | Path | What it is |
 | --- | --- |
 | `/usr/bin/battery-health-center` | The app |
-| `/usr/libexec/battery-health-center/bhc-helper` | A small helper that changes the charge limit. It runs as root only when you apply a limit, after a PolicyKit password prompt, and accepts only checked values |
+| `/usr/libexec/battery-health-center/bhc-helper` | A small helper that changes the charge limit. It runs as root when you apply a limit or save a schedule (after a PolicyKit password prompt), and as the schedule service below. It accepts only checked values |
 | `/usr/share/polkit-1/actions/io.github.BatteryHealthCenter.policy` | The PolicyKit rule for that prompt |
 | `/usr/lib/systemd/system/battery-health-center-restore.service` | Re-applies your saved charge limit at boot and after sleep (enabled automatically) |
+| `/usr/lib/systemd/system/battery-health-center-scheduler.path` and `.service` | Carry out your charging schedule without asking for a password each time. The `.path` unit starts the service only while a schedule exists, and the service stops when you remove the schedule |
+| `/usr/share/locale/{de,es}/LC_MESSAGES/battery-health-center.mo` | The German and Spanish translations |
 | Launcher, icon, AppStream metadata, man page | The usual desktop files |
 
 Files the app creates for you:
@@ -227,6 +233,8 @@ Files the app creates for you:
 | `~/.config/battery-health-center/settings.ini` | Your preferences |
 | `~/.config/autostart/io.github.BatteryHealthCenter.desktop` | Only if you turn on "Record History in the Background" |
 | `/etc/battery-health-center.conf` | Your saved charge limit |
+| `/etc/battery-health-center.schedule` | Your charging schedule and the optimized charging setting (only if you save one) |
+| `/var/lib/battery-health-center/unplug-log` | When you unplugged the laptop, kept only while optimized charging is on, to learn your routine. It never leaves your computer |
 
 Removing the app leaves these in place. Delete them yourself if you want a clean slate.
 
@@ -237,7 +245,8 @@ Removing the app leaves these in place. Delete them yourself if you want a clean
 | Real icons for every app on the Usage page | Yes | Only for other snaps |
 | Per-app energy use | All apps | All apps |
 | Power mode, automatic power mode, GNOME power-saving settings | Yes | No (the sandbox blocks them) |
-| Charge limit | Yes (PolicyKit password prompt) | Yes (needs the manual permissions below) |
+| Charge limit, profiles, charging schedule and optimized charging | Yes (PolicyKit password prompt when saving) | Yes (needs the manual permissions below) |
+| Battery-saving tips (screen brightness, keyboard backlight, Bluetooth) | Yes | No (the sandbox blocks them) |
 | After installing | Works at once | Needs `sudo snap connect` for `hardware-observe`, `system-observe` and `power-control` |
 | Updates | With your system updates | Automatically by snapd |
 | Works on | Ubuntu 24.04 and newer, Zorin 18, and similar | Any distribution with snapd |
@@ -255,6 +264,8 @@ Don't install both on the same laptop: they would both manage your charge limit.
 | The app's icon is blank in the app list | A stale icon cache from an older install made with the project's `install.sh` | `sudo gtk-update-icon-cache -f -t /usr/local/share/icons/hicolor`, then log out and in |
 | Both the snap and this package are installed | They would both manage the charge limit | Remove one: `sudo snap remove battery-health-center` or `sudo apt remove battery-health-center` |
 | The charge limit asks for a password every time | PolicyKit remembers it only for a few minutes | This is expected; it is what keeps the helper safe |
+| The Charging Schedule section is greyed out | A schedule needs a saved charge limit | On the Charging page turn on **Limit Maximum Charge** and **Keep After Restart**, press **Apply**, then set the schedule |
+| The schedule doesn't seem to do anything | The service isn't running, or the laptop's clock or time zone is wrong | `systemctl status battery-health-center-scheduler.path battery-health-center-scheduler.service` (the service runs only while `/etc/battery-health-center.schedule` exists) and `timedatectl` |
 | Something else | | [Open an issue](https://github.com/arios4k/battery-health-center/issues) with your distribution and `apt-cache policy battery-health-center` |
 
 ## How the repository is built
