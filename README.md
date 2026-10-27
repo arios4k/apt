@@ -87,7 +87,7 @@ or newer**.
 | --- | --- |
 | Ubuntu 24.04 LTS | Tested (clean install in a container) |
 | Zorin OS 18 | Tested (the author's laptop) |
-| Linux Mint 22 | Expected to work (it is built on Ubuntu 24.04), not tested |
+| Linux Mint 22 | Tested |
 | Debian 13 ("trixie") and newer | Expected to work (newer libraries), not tested |
 | Ubuntu 22.04, Linux Mint 21, Debian 12 | **Not supported**: their libraries are too old |
 | arm64 and other architectures | **Not supported**: only amd64 is published |
