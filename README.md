@@ -13,8 +13,8 @@ energy (with an hour-by-hour view for each app). You can export your history as 
 **Latest version:** 0.4.1
 &nbsp;·&nbsp; **Languages:** English, Spanish (español) and German (Deutsch). The app follows your system language.
 
-This is the **full version** of the app. If you'd rather use the sandboxed one, there is also a
-[snap](https://snapcraft.io/battery-health-center) (see [apt or snap?](#apt-or-snap)).
+This repository is how Battery Health Center is distributed: install it once and `apt` keeps it up to
+date. (If you installed an older version as a snap, see [Troubleshooting](#troubleshooting).)
 
 ## Screenshots
 
@@ -48,7 +48,6 @@ The Power page, with power modes and GNOME's power-saving settings, is only in t
 - [Update and remove](#update-and-remove)
 - [Other ways to add the repository](#other-ways-to-add-the-repository)
 - [What gets installed](#what-gets-installed)
-- [apt or snap?](#apt-or-snap)
 - [Troubleshooting](#troubleshooting)
 - [How the repository is built](#how-the-repository-is-built) (for maintainers)
 
@@ -238,31 +237,16 @@ Files the app creates for you:
 
 Removing the app leaves these in place. Delete them yourself if you want a clean slate.
 
-## apt or snap?
-
-| | apt (this repository) | [Snap Store](https://snapcraft.io/battery-health-center) |
-| --- | --- | --- |
-| Real icons for every app on the Usage page | Yes | Only for other snaps |
-| Per-app energy use | All apps | All apps |
-| Power mode, automatic power mode, GNOME power-saving settings | Yes | No (the sandbox blocks them) |
-| Charge limit, profiles, charging schedule and optimized charging | Yes (PolicyKit password prompt when saving) | Yes (needs the manual permissions below) |
-| Battery-saving tips (screen brightness, keyboard backlight, Bluetooth) | Yes | No (the sandbox blocks them) |
-| After installing | Works at once | Needs `sudo snap connect` for `hardware-observe`, `system-observe` and `power-control` |
-| Updates | With your system updates | Automatically by snapd |
-| Works on | Ubuntu 24.04 and newer, Zorin 18, and similar | Any distribution with snapd |
-
-Don't install both on the same laptop: they would both manage your charge limit.
-
 ## Troubleshooting
 
 | What you see | Why | What to do |
 | --- | --- | --- |
 | `NO_PUBKEY 4773367EBD976CF5` and `The repository 'https://arios4k.github.io/apt stable InRelease' is not signed.` | The signing key is missing or the `signed-by` path is wrong | Repeat the `curl … key.asc` step and check that the path in the `.list` file matches |
 | `Unable to locate package battery-health-center` | The repository isn't added, or `apt update` wasn't run | Check that `/etc/apt/sources.list.d/battery-health-center.list` exists, then `sudo apt update` |
-| `The following packages have unmet dependencies … libc6 (>= 2.39)` | The system is too old (see [Which systems it works on](#which-systems-it-works-on)) | Use the snap instead, or upgrade the system |
+| `The following packages have unmet dependencies … libc6 (>= 2.39)` | The system is too old (see [Which systems it works on](#which-systems-it-works-on)) | Upgrade the system to a supported release |
 | `404 Not Found` or `Failed to fetch` for `arios4k.github.io` | A typo in the address, no internet, or the site is rebuilding after a release | Check the address, wait a few minutes and run `sudo apt update` again |
 | The app's icon is blank in the app list | A stale icon cache from an older install made with the project's `install.sh` | `sudo gtk-update-icon-cache -f -t /usr/local/share/icons/hicolor`, then log out and in |
-| Both the snap and this package are installed | They would both manage the charge limit | Remove one: `sudo snap remove battery-health-center` or `sudo apt remove battery-health-center` |
+| You installed an older version as a snap, and now also this package | Both would manage the charge limit | Remove the snap: `sudo snap remove battery-health-center`. That deletes its history, so first copy `~/snap/battery-health-center/current/.local/share/battery-health-center/*.csv` to `~/.local/share/battery-health-center/` |
 | The charge limit asks for a password every time | PolicyKit remembers it only for a few minutes | This is expected; it is what keeps the helper safe |
 | The Charging Schedule section is greyed out | A schedule needs a saved charge limit | On the Charging page turn on **Limit Maximum Charge** and **Keep After Restart**, press **Apply**, then set the schedule |
 | The schedule doesn't seem to do anything | The service isn't running, or the laptop's clock or time zone is wrong | `systemctl status battery-health-center-scheduler.path battery-health-center-scheduler.service` (the service runs only while `/etc/battery-health-center.schedule` exists) and `timedatectl` |
