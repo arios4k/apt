@@ -5,35 +5,35 @@ Origin: Battery Health Center
 Label: Battery Health Center
 Suite: stable
 Codename: stable
-Date: Wed, 28 Oct 2026 07:49:50 UTC
+Date: Wed, 28 Oct 2026 08:42:12 UTC
 Architectures: amd64
 Components: main
 Description: Battery Health Center packages
 MD5Sum:
- e82ea2ce7554b918c71fc06282890918 1613 main/binary-amd64/Packages
- 929d86904b9f1321c02e54a6a8304498 930 main/binary-amd64/Packages.gz
+ f09ab70247be19902f0106888f539834 1613 main/binary-amd64/Packages
+ 1544c9895fe5ba2db565db598f600054 930 main/binary-amd64/Packages.gz
  c00d1daf5a08ffe861cbdc8bdea4c7a1 155 main/binary-amd64/Release
 SHA1:
- 3e7a952b58a9a5b5be794d5cf0594343774fcf12 1613 main/binary-amd64/Packages
- a5d2bfc5eb058e029370aeb9188650de61d7c368 930 main/binary-amd64/Packages.gz
+ 7b5c4b2226e5ada263b6fc709dadecaf0ac0f68d 1613 main/binary-amd64/Packages
+ 761c16474edcbf31f060c5321d4b35059528d6c9 930 main/binary-amd64/Packages.gz
  c02eeea367e7d134d9ec8750459471951e472e05 155 main/binary-amd64/Release
 SHA256:
- 77fdfafeb609ec95c977a6c16b7c4786d9e20e998c50d817f135fe3a04216527 1613 main/binary-amd64/Packages
- 63f4afdfa7811e40c4a865a54a6fd9c653fb6b03e66865624b2ab0d97fa72f27 930 main/binary-amd64/Packages.gz
+ 3d8502ca3d367507c0492e1759c646e83fa199c7969c9389e7b4b98c02f2ce16 1613 main/binary-amd64/Packages
+ a90972187139e9d23069505dc2d3824dc411a6d258946ae3c028e08581cb9e0f 930 main/binary-amd64/Packages.gz
  d414cd34a2770d4e932ffc76bdd2447607516ccc0dde86b01ef7d614767fee74 155 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE8JDQHXT3FMhalSPKR3M2fr2XbPUFAmrhqR8ACgkQR3M2fr2X
-bPW+jA//cXC4pH888cRw5bKSQI4ImKFASyNEJal9qvdGu9NK9mEZeGpoE0eXmcJ3
-1mySVXqLOZTo9+9l0ovqYG0YDwg1ADUa48YxiuCKLqg2UlKckq44USOqYu5T0Nt0
-SS0hXV2wa2JssXEAQsFqxqETqCduTN8rQarvqmzezii8FKtDTPjP5lcH5yGS3ml0
-EnH9SsT9qj1Akdunq5J3PXf6Hr7jHOLKPNFDuLyNxMsoP567VN7CllWjC9b+9b/g
-GKwqY//SyS6mXvxsTvDJG791FP2q2Ty84GQz70GFndqDffescmrItmpf8AqVGICk
-oi9HcH6pkbAl/bFdo0r3XIBeiL6Nc/PrcYN3EoI7u2QX6Nbe1pqGCm3WUS8yoGJe
-rIjDNCyrwBQwogq9AqK/QxFtip/UVuWCOD4NoeX4W2/6BDp0FZQJg+VGTuVVHkgb
-0rvfSv/xfz9dE9N5f0yTHV5CiTbxyDnTsIIXWZPYgnjjEAEO9mVmg598HDTQ2Qe4
-U6pOUbVLqvng+25dH2DaMR72JOJJ0bVfrjS3ufRQMdZE5Zp4aSuLF5b2oPLi6IyW
-FzUz151xOOybSTFrvNwhIRdhHdkJ8DZnkLchmJdZsRzFqv7LhzY08mDZJLD8L0hC
-6QNafACLSATX5l66aYoHKrjx8xdtT6C7nSnNWrjqDMxCQbyAGUM=
-=MBkA
+iQIzBAEBCgAdFiEE8JDQHXT3FMhalSPKR3M2fr2XbPUFAmrhtWYACgkQR3M2fr2X
+bPWhVBAAt9Kv5MwhBbeKo4UIlqn3sbURafKfntKzAyn0aygGL+7dlymMoOPyGgU4
+noS8qcHm/tDNYezstkPaFh4cO4amCnx/PfoNH7qJsmbW8J4YZSJr819OJNCgFSrf
+QE9xK7fVoQ+7XzBTRlManADF8FGQWsJA5g5XemZCLTPBPIiRCrfA5r35IRG9eLEq
+x60dVI1/7KEotkxV7ngkonffDpxb8EArGCXmugPjMi6YdCM1IEXW5+g5XCs1E6z4
+t91qqPDbvcHF+b9PT7KazDzrcaGj6GENxYp9KLEHSemAsu7fgVQmMwutXw84VjWU
+Bg5lgWIHxbqg5cE2YZ1qsE4YgAC1qG8qRqO6MsVyKHQzHG1ifSp4ZKYF6G+5smvS
+bJSASS+gxJVmdqQxtUvN1lByP79jP3K9vjftVKwXH6HKvCEb9PPrMrUUo1olBeS2
+tydSzBvfJtbvFaNxCVO1N5XgJJNfqPktOhyYb6cQ6tOJ66b2EIkCs6MIfec7o7Hv
+8mZ4zW+keGVklbhxkxROaORScS6Yzyw0OKa3b09/2LZeGlyh9ZcH25yPUnDyUwAY
+2KZ5VMOdig1i3L0D/X4xtrXckxjDMz/CUQ0822GsQB36fzGtF1WEt7sQpN15FAx/
+ldDlYq1o6gkFiqATQK4/4aLR54Qp6gSuayszq5TcZwkSQxCagXw=
+=JAuI
 -----END PGP SIGNATURE-----
