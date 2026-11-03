@@ -13,6 +13,7 @@
   body { background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;
          max-width:44rem; margin:0 auto; padding:2.5rem 1rem 4rem; }
   h1 { margin:0 0 .25rem; font-size:1.9rem; }
+  .app-title { display:flex; align-items:center; gap:.65rem; }
   h2 { margin:2.25rem 0 .5rem; font-size:1.2rem; border-bottom:1px solid var(--line); padding-bottom:.3rem; }
   p, li { color:var(--fg); }
   .lead, .dim { color:var(--dim); }
@@ -28,7 +29,7 @@
 </style>
 </head>
 <body>
-<h1>Battery Health Center</h1>
+<h1 class="app-title"><img src="battery-health-center.svg" width="48" height="48" alt="">Battery Health Center</h1>
 <p class="lead">All your laptop battery information in one place, for GNOME: health, cycle count, charge limits and
 profiles, a charging schedule, sleep drain, power modes, saving tips and which apps use the most energy.</p>
 <p class="dim">Latest version: 0.5.0 &middot; Languages: English, Spanish (español) and German (Deutsch)</p>
