@@ -27,7 +27,7 @@ date. (If you installed an older version as a snap, see [Troubleshooting](#troub
   <img src="screenshots/usage.png" alt="Usage: battery level history and battery use during sleep" width="48%">
 </p>
 <p align="center">
-  <img src="screenshots/usage-apps.png" alt="Usage: apps using the most energy, with their real icons and estimated power draw" width="48%">
+  <img src="screenshots/schedule.png" alt="Charging schedule and optimized charging" width="48%">
   <img src="screenshots/app-trend.png" alt="One app's energy use hour by hour, opened by clicking it on the Usage page" width="48%">
 </p>
 <p align="center">
