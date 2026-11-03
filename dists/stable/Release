@@ -2,19 +2,19 @@ Origin: Battery Health Center
 Label: Battery Health Center
 Suite: stable
 Codename: stable
-Date: Mon, 02 Nov 2026 04:48:15 UTC
+Date: Tue, 03 Nov 2026 16:09:05 UTC
 Architectures: amd64
 Components: main
 Description: Battery Health Center packages
 MD5Sum:
- 323cb4774816b8b2afbec4c4fe632f8b 1613 main/binary-amd64/Packages
- c4af0629add5213c3232e566d73bfe3d 930 main/binary-amd64/Packages.gz
+ 4b066aeee8e4c42c806697f1c3f1790a 1613 main/binary-amd64/Packages
+ 806fa053afe9596eacab7914696e5161 927 main/binary-amd64/Packages.gz
  c00d1daf5a08ffe861cbdc8bdea4c7a1 155 main/binary-amd64/Release
 SHA1:
- cdcdabdedc9405ab9eff11d4c6c44eeee2c43c55 1613 main/binary-amd64/Packages
- 80c36ce54e45da081a54e65405106c7557270a9d 930 main/binary-amd64/Packages.gz
+ 04846a440096ab075f29dfdaf8f542a13964daca 1613 main/binary-amd64/Packages
+ d19abf7c6ee67ee9565ead4e18e8a51de1073c17 927 main/binary-amd64/Packages.gz
  c02eeea367e7d134d9ec8750459471951e472e05 155 main/binary-amd64/Release
 SHA256:
- 0d077c634fc4821295da991c6f12abe97ee5c4c0a4cd8c511a24623e44c89f94 1613 main/binary-amd64/Packages
- 4600374b7b73f1fa2e88a983f3099d93a651a89ab3bea3ad05685bb3867b2208 930 main/binary-amd64/Packages.gz
+ e1cc64ec1ee0eb98748290de5ad1f36ecf883c91a571350439461d7f9b73140b 1613 main/binary-amd64/Packages
+ 9af455c1d7c2044a835810c443fcddc730c46342fcd9ce7f1bfcb22bb2bab900 927 main/binary-amd64/Packages.gz
  d414cd34a2770d4e932ffc76bdd2447607516ccc0dde86b01ef7d614767fee74 155 main/binary-amd64/Release
