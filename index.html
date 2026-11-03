@@ -24,8 +24,6 @@
   table { border-collapse:collapse; width:100%; margin:.5rem 0; }
   td { border-bottom:1px solid var(--line); padding:.4rem .5rem .4rem 0; vertical-align:top; }
   td:first-child { color:var(--dim); white-space:nowrap; width:1%; padding-right:1rem; }
-  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:.75rem; margin:.75rem 0 0; }
-  .shots img { width:100%; height:auto; border:1px solid var(--line); border-radius:8px; display:block; }
   @media (max-width:30rem) { body { padding-top:1.5rem; } }
 </style>
 </head>
@@ -34,17 +32,6 @@
 <p class="lead">All your laptop battery information in one place, for GNOME: health, cycle count, charge limits and
 profiles, a charging schedule, sleep drain, power modes, saving tips and which apps use the most energy.</p>
 <p class="dim">Latest version: 0.5.0 &middot; Languages: English, Spanish (español) and German (Deutsch)</p>
-
-<h2>Screenshots</h2>
-<div class="shots">
-  <img src="screenshots/overview.png" alt="Overview: charge level, time remaining, health and power source" loading="lazy">
-  <img src="screenshots/health.png" alt="Health: capacity over time and cycle count" loading="lazy">
-  <img src="screenshots/charging.png" alt="Charging: profiles, charge limit, charging schedule and optimized charging" loading="lazy">
-  <img src="screenshots/usage.png" alt="Usage: battery level history and battery use during sleep" loading="lazy">
-  <img src="screenshots/schedule.png" alt="Charging schedule and optimized charging" loading="lazy">
-  <img src="screenshots/app-trend.png" alt="One app's energy use hour by hour" loading="lazy">
-  <img src="screenshots/power.png" alt="Power: power modes and power-saving settings" loading="lazy">
-</div>
 
 <h2>Install</h2>
 <p>These commands add the repository once. After that, <code>apt</code> keeps the app up to date with the rest of your system.</p>
