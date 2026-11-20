@@ -1,25 +1,26 @@
 Package: battery-health-center
-Version: 0.6.6-1
+Version: 0.7.0-1
 Architecture: amd64
 Homepage: https://github.com/arios4k/battery-health-center
 Maintainer: Alexis Rios-Negron <182820807+arios4k@users.noreply.github.com>
-Installed-Size: 2046
+Installed-Size: 2255
 Depends: libadwaita-1-0 (>= 1.5), libadwaita-1-0 (>= 1.5~beta), libc6 (>= 2.39), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.54.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (>= 4.13.5), libgtk-4-1 (>= 4.14), libpango-1.0-0 (>= 1.14.0), pkexec | policykit-1, upower
 Recommends: power-profiles-daemon
 Priority: optional
 Section: utils
-Filename: pool/main/b/battery-health-center/battery-health-center_0.6.6-1_amd64.deb
-Size: 669876
-SHA256: eeff50f3a677e283c8dea3ab82db918cec266b3c433023c9be8df42bc7412903
-SHA1: b286540e6433c70f952109dca874b46c47264f27
-MD5sum: a5e1ee9210930786251af407a4d4eb52
+Filename: pool/main/b/battery-health-center/battery-health-center_0.7.0-1_amd64.deb
+Size: 738364
+SHA256: 20af3b65a4a97d260d1ba71b512663a240cbbc3877eba4cac21b17a499f9e1e6
+SHA1: c776bea03ee336b5526e8bb664beb97ba4501ed3
+MD5sum: 4957b2df2894c409d6009b8f912a6f26
 Description: All your laptop battery information in one place, for GNOME
  Battery Health Center shows everything about your laptop battery in one GNOME
  app: health and cycle count, charge limits and profiles to reduce wear, a
  charging schedule and optimized charging, battery use during sleep, power modes
  and power-saving settings, battery-saving tips, and which apps use the most
- energy (with an hour-by-hour view per app). History can be exported as CSV. It
- is available in English, Spanish and German.
+ energy (with an hour-by-hour view per app). History can be exported as CSV,
+ backed up locally, or managed with retention controls. It is available in
+ English, Spanish, German, French and Simplified Chinese.
  .
  Charge limits need a laptop whose firmware exposes charge thresholds to the
  kernel (as on ThinkPads and many others). Changing them asks for your password
